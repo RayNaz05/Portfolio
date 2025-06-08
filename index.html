@@ -567,19 +567,31 @@
     </script>
 
 <script>
-  emailjs.init("cBBHmYBWyQXm2r3DJ");
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
+  document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("cBBHmYBWyQXm2r3DJ");
+
+    const form = document.getElementById("contact-form");
     const status = document.getElementById("form-status");
-    status.textContent = "Sending...";
-    emailjs.sendForm("service_virli8z", "template_n0jtnbn", this)
-      .then(() => {
-        status.textContent = "Message sent! Thank you.";
-        this.reset();
-      }, (err) => {
-        console.error("EmailJS Error:", err);
-        status.textContent = "Failed to send message. Please try again.";
-      });
+
+    if (!form) {
+      console.error("Form with ID 'contact-form' not found.");
+      return;
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      status.textContent = "Sending...";
+
+      emailjs.sendForm("service_virli8z", "template_n0jtnbn", this)
+        .then(() => {
+          status.textContent = "Message sent! Thank you.";
+          form.reset();
+        })
+        .catch((err) => {
+          console.error("EmailJS Error:", err);
+          status.textContent = "Failed to send message. Please try again.";
+        });
+    });
   });
 </script>
 
