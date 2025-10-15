@@ -3,8 +3,7 @@
 A modern, responsive personal portfolio built with **Tailwind CSS**, **Font Awesome**, and **Particles.js**.  
 The site highlights my background as a **Computing Science student at the University of Alberta**, and includes an About section, project cards, a downloadable résumé, and a working contact form (EmailJS).
 
-**Live site (if enabled):** `https://raynaz05.github.io/Portfolio`  
-**Résumé:** `Rayhan-Nazeel-Resume.pdf`
+**Live site :** `https://raynaz05.github.io/Portfolio`  
 
 ---
 
