@@ -37,3 +37,28 @@ External CDNs used:
 - `https://cdn.emailjs.com/dist/email.min.js`
 
 ---
+
+
+## 🚀 How to View Locally
+
+You can open `index.html` directly in any browser.  
+For best results, use a local server so all scripts load correctly:
+
+**Option A – VS Code**
+- Install the *Live Server* extension.
+- Right-click `index.html` → **Open with Live Server**.
+
+**Option B – Python 3**
+```bash
+python -m http.server 5500
+```
+Then open http://localhost:5500
+
+---
+
+
+##👤 Author
+
+Rayhan Nazeel
+🎓 Computing Science Student, University of Alberta
+📧 rayhannazeel@outlook.com
