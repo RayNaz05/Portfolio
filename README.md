@@ -57,7 +57,7 @@ Then open http://localhost:5500
 ---
 
 
-##👤 Author
+## 👤 Author
 
 Rayhan Nazeel
 🎓 Computing Science Student, University of Alberta
